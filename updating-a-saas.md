@@ -25,9 +25,9 @@ A. All software changes must be compatible with data created by version `n - 1`.
 ## Migrating data from one form to another
 
 1. Add new data to database schema
-2. Update software to write old and new data to database, but continue to read and use only old data
+2. Update software to write old and new data to database, read new data, but only use old data
 3. Migrate old data to new data for legacy records
-4. Update software to read and use new data, ignoring old data
-5. Update software to stop writing old data
+4. Update software to use new data, ignoring old data
+5. Update software to stop reading and writing old data
 6. Remove old data from schema
 
